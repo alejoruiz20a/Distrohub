@@ -1,9 +1,12 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-
-
+import { getCollection } from "astro:content";
+import { siteConfig } from "../config/site-config";
+import TypedBlogPost from "../components/TypedBlogPost.astro";
+const blogPosts = await getCollection('blog')
 ---
 
 <MainLayout title="DistroHub">
-	<h1>----- LANDING PAGE -----</h1>
+	<h1 class="text-xl text-white">----- LANDING PAGE -----</h1>
+	{blogPosts.map((post) => <TypedBlogPost post={ post}/>)}
 </MainLayout>
