@@ -3,10 +3,9 @@ title: Comprendiendo los Hooks de React
 date: 2023-06-15
 description: Learn how to use React Hooks to manage state and lifecycle in functional components.
 author: Alice Johnson
-image: '/assets/images/post-03.png'
+image: '/src/assets/images/post-03.png'
 tags: [React, JavaScript, Web Development]
 ---
-
 # Comprendiendo los Hooks de React
 
 Los Hooks de React son una característica que te permite usar el estado y otras características de React en componentes funcionales. Esto te permite escribir componentes más simples y reutilizables sin tener que convertirlos en clases.
